@@ -29,84 +29,10 @@ public class Main {
         // Задание 3
         int year = 2022;
 
-        switch (year) {
-            case 2000:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2001:
-            case 2002:
-            case 2003:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2004:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2005:
-            case 2006:
-            case 2007:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2008:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2009:
-            case 2010:
-            case 2011:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2012:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2013:
-            case 2014:
-            case 2015:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2016:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2017:
-            case 2018:
-            case 2019:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2020:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2021:
-            case 2022:
-            case 2023:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2024:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2025:
-            case 2026:
-            case 2027:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2028:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2029:
-            case 2030:
-            case 2031:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2032:
-                System.out.println(" ...год является високосным");
-                break;
-            case 2033:
-            case 2034:
-            case 2035:
-                System.out.println(" ...год не является високосным");
-                break;
-            case 2036:
-                System.out.println(" ...год является високосным");
-                break;
-            default:
-                System.out.println("Неправильное значение");
+        if ((year % 4 == 0) && (year % 100 != 0) && (year % 400 == 0)) {
+            System.out.println(year + " Год является високосным");
+        } else {
+            System.out.println(year + " Год не является високосным");
         }
 
         // Задание 4
